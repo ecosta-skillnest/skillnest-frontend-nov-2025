@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Formulario (contenedor) -->
+    <form action="" method="">
+
+        <!-- Entradas de fecha y hora -->
+        <div>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="">
+        </div>
+
+        <div>
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="">
+        </div>
+
+        <!-- Contacto y búsqueda -->
+        <div>
+            <label for="correoElectronico">Correo electrónico</label>
+            <input type="email" id="correoElectronico" name="">
+        </div>
+
+        <div>
+            <label for="sitioWeb">Sitio web</label>
+            <input type="url" id="sitioWeb" name="">
+        </div>
+
+        <div>
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar" name="">
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="" placeholder="+56 9">
+        </div>
+
+        <!-- Números y rangos -->
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="">
+        </div>
+
+        <div>
+            <label for="volumen">Volumen</label>
+            <input type="range" id="volumen" name="">
+        </div>
+
+        <!-- Otros -->
+        <div>
+            <label for="documento">Subir documento (PDF)</label>
+            <input type="file" id="documento" name="">
+        </div>
+
+        <div>
+            <label for="colorFavorito">Color favorito</label>
+            <input type="color" id="colorFavorito" name="">
+        </div>
+
+        <!-- Listas deplegables -->
+        <div>
+            <label for="pais">Selecciona un país</label>
+            <select id="pais" name="">
+                <option value="cl">Chile</option>
+                <option value="ar">Argentina</option>
+                <option value="pe">Perú</option>
+                <option value="co">Colombia</option>
+            </select>
+        </div>
+
+        <!-- Lista (sugerencia moderna?) -->
+        <div>
+            <label for="ice-cream-choice">Selecciona un helado:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="">
+
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+            </datalist>
+        </div>
+
+        <!-- Un tipo de agrupación (categoría) -->
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="">
+            </div>
+
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="">
+            </div>
+        </fieldset>
+
+        <!-- Validaciones (sin JavaScript) -->
+        <div>
+            <label for="nombreUsuario">Nombre de usuario:</label>
+            <input type="text" id="nombreUsuario" name="" minlength="3" maxlength="12" required>
+        </div>
+
+        <div>
+            <label for="numeroFavorito">Número favorito (0-10):</label>
+            <input type="number" id="numeroFavorito" name="" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="telefonoMovil">Teléfono móvil:</label>
+            <input type="text" id="telefonoMovil" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+        <!-- Botón de tipo submit -->
+        <button type="submit"><i class="bi bi-send"></i>Enviar <strong>información</strong></button>
+
+        <!--  -->
+        <input type="submit" value="Enviar información">
+    </form>
+</body>
+
+</html>

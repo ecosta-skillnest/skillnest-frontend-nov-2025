@@ -1,0 +1,1 @@
+# Skillnest frontend noviembre 2025
