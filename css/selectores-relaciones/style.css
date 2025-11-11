@@ -1,0 +1,20 @@
+/* Selecciona cualquier <p> dentro <article> */
+article.articulo-principal p {
+    color: #176c17;
+}
+
+/* Selecciona todos <p> hijas directas de <article> */
+article.articulo-principal>p {
+    color: tomato;
+    font-weight: bold;
+}
+
+/* Selecciona el <p> que viene después del <h2> */
+h2+p {
+    margin-top: 100px;
+}
+
+/* Selecciona las <p> que son hermanas y vienen después del <h2> */
+h2~p {
+    font-style: italic;
+}

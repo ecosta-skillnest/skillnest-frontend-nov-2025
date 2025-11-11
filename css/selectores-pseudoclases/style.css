@@ -1,0 +1,13 @@
+/* :link un enlace que no ha sido visitado */
+a:link {
+    color: red;
+}
+
+/* :visited un enlace que ya ha sido visitado */
+a:visited {
+    color: green;
+}
+
+/* .btn-iniciar-sesion:hover {
+    background-color: limegreen;
+} */

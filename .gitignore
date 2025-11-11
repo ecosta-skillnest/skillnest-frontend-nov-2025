@@ -103,6 +103,7 @@ tags
 [._]*.un~
 
 ### VisualStudioCode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -261,3 +262,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode,sublimetext,webstorm,vim
+
+# Personal folders
+assignments/
+challenges/

@@ -1,0 +1,48 @@
+/* Selecciona todos los elementos <p> (párrafos) */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Selecciona todos los elementos <h1> (encabezados nivel 1) */
+h1 {
+    font-size: 40px;
+    color: tomato;
+}
+
+/* Selecciona por el nombre de una clase */
+.destacado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Selecciona por el nombre de una clase */
+.subtitulo {
+    color: #777;
+    font-style: italic;
+}
+
+/* Seleccionar por ID (único) un elemento */
+#banner-principal {
+    background-color: lightblue;
+    /* Espacio interior */
+    padding: 20px;
+    /* Espacio exterior */
+    margin: 50px;
+    /* Borde: tamaño estilo color */
+    border: 2px solid green;
+}
+
+/* Seleccionar todos los elementos (universal - comodín) */
+* {
+    /* border: 1px solid red; */
+}
+
+/* Selecciona más de un elemento */
+h1, h2 {
+    font-family: "Roboto", "Times New Roman", Times, serif;
+}
+
+/* h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */

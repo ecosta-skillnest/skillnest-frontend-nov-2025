@@ -1,0 +1,22 @@
+/* Selecciona los elementos <a> que tiene el atributo title */
+a[title] {
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+/* Selecciona los elementos que tienen un atributo y valor específo */
+input[type="submit"] {
+    background-color: limegreen;
+    border: none;
+}
+
+/* Selecciona todos los <a> cuyo atributo href comience con https:// */
+a[href^="https://"] {
+    padding-left: 50px;
+}
+
+/* Selecciona todos los <a> cuyo atributo contenga la palabra "archivos" */
+a[href*="archivos"] {
+    background-color: #4f4f4f;
+    color: #fff;
+}
