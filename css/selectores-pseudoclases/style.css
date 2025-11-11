@@ -8,6 +8,78 @@ a:visited {
     color: green;
 }
 
-/* .btn-iniciar-sesion:hover {
-    background-color: limegreen;
-} */
+/* :hover cuando el puntero del mouse está sobre el elemento */
+.mi-enlace:hover {
+    text-decoration: underline;
+    background-color: #f9bfbf;
+}
+
+/* :focus cuando el elemento tiene el foco (seleccionado con clic o tab) */
+.campo-texto:focus {
+    border-color: #bd3eac;
+    /* Quitamos el borde por defecto */
+    outline: none;
+}
+
+/* :checked para <input type="checkbox"> o "radio" seleccionados */
+input[type="checkbox"]:checked {
+    /* Resalta el checkbox marcado */
+    box-shadow: 0 0 10px green;
+}
+
+/* :disabled elementos (input, button) que están deshabilitados */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* :readonly elementos (input) que son de solo lectura */
+input:read-only {
+    background-color: #eee;
+    border: 1px dashed #ccc;
+}
+
+/* :required elementos (input) que tienen el atributo required */
+input:required {
+    border-left: 3px solid red;
+}
+
+/* :first-child selecciona el elemento que es la primera hija de su madre */
+.lista-items li:first-child {
+    font-weight: bold;
+    color: green;
+}
+
+/* :last-child selecciona el elemento que es la última hija de su madre */
+.lista-items li:last-child {
+    font-weight: bold;
+    color: red;
+}
+
+/* :nth-child(n) el selector "mágico". Selecciona hijas por número. */
+/* (2n) o (even) selecciona las hijas pares (2, 4, 6...) */
+/* (2n+1) o (odd) selecciona las hijas imapres (1, 3, 5...) */
+.lista-items li:nth-child(even) {
+    /* Estilo "cebra" */
+    background-color: lightskyblue;
+}
+
+/* (3) selecciona solo la tercera hija */
+.lista-items li:nth-child(3) {
+    text-decoration: underline;
+}
+
+/* Diferencia clave: nth-child vs nth-of-type */
+/* :nth-child(2) selecciona la segunda hija (en .articulos, es el <div>) */
+/* .articulos p:nth-child(2) { ... } */
+/* Esto no seleccionaría nada, porque la 2da hija es un <div>, no un <p> */
+/* :nth-of-type(n) selecciona el enésimo elemento de ese tipo */
+/* "Selecciona el segundo párrafo" (sin importar qué otros elementos haya) */
+.articulos p:nth-of-type(2) {
+    color: blue;
+}
+
+/* Selecciona todos los <li> que no sean el :first-child */
+.lista-items li:not(:first-child) {
+    border-top: 2px solid pink;
+}
