@@ -1,0 +1,53 @@
+/* ::before para añadir comillas gigantes antes del contenido del <blockquote> */
+.cita::before {
+    /* El contenido que queremos insertar */
+    content: "“";
+    font-size: 40px;
+    color: pink;
+    font-weight: bold;
+    /* Lo movemos un poco para que se vea bien */
+    position: relative;
+    top: 10px;
+}
+
+/* ::after para añadir las comillas de cierre después del contenido. */
+.cita::after {
+    content: "”";
+    font-size: 40px;
+    color: pink;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+/* Caso de uso común es añadir íconos a enlaces */
+a[href$=".pdf"]::after {
+    /* Añade texto simple */
+    content: " (PDF)";
+    font-size: 10px;
+    color: red;
+}
+
+a[href^="https://"]::before {
+    /* Añade un emoji o ícono */
+    content: "🔒";
+}
+
+/* Estiliza la primera línea del párrafo */
+.introduccion::first-line {
+    /* Convierte el texto a "versales" */
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+/* Cambia el estilo del texto "Escribe tu nombre aquí..." */
+input::placeholder {
+    color: #ff9e9e;
+    font-style: italic;
+}
+
+/* También puedes usar pseudo-clases en el <input> */
+input:focus::placeholder {
+    /* Oculta el placeholder cuando haces clic */
+    color: transparent;
+}
