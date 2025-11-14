@@ -1,0 +1,77 @@
+/* Para el h1, usamos una fuente "serif" */
+.titulo-principal {
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+.parrafo-destacado,
+.parrafo-normal {
+    /* Definimos una lista de fuentes alternativas */
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.titulo-principal {
+    /* Un azul oscuro, casi negro */
+    color: #2c3e50;
+}
+
+.parrafo-destacado {
+    /* Un azul brillante */
+    color: #007bff;
+}
+
+.parrafo-normal {
+    /* Un gris oscuro */
+    color: #333333;
+}
+
+/* Por defecto, 1rem = 16px */
+.titulo-principal {
+    /* 2.5 * 16px = 40px */
+    font-size: 2.5rem;
+}
+
+.parrafo-destacado {
+    /* 1.25 * 16px = 20px */
+    font-size: 1.25rem;
+}
+
+.parrafo-normal {
+    /* 1 * 16px = 16px (tamaño base) */
+    font-size: 1rem;
+}
+
+.titulo-principal {
+    /* Lo mismo que "bold" */
+    font-weight: 700;
+}
+
+.parrafo-destacado span {
+    /* El máximo grosor (si la fuente lo soporta) */
+    font-weight: 900;
+}
+
+.parrafo-normal {
+    /* "normal" */
+    font-weight: 400;
+}
+
+.parrafo-normal span {
+    /* Estilo cursiva para resaltar */
+    font-style: italic;
+    color: #555;
+}
+
+.parrafo-normal {
+    /* Significa "160% del tamaño de la fuente". */
+    line-height: 1.6;
+}
+
+.titulo-principal {
+    /* Significa "120% del tamaño de la fuente". */
+    line-height: 1.2;
+}
+
+.parrafo-destacado {
+    /* Significa "140% del tamaño de la fuente". */
+    line-height: 1.4;
+}

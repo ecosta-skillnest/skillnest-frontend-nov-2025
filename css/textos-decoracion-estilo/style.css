@@ -1,0 +1,74 @@
+body {
+    /* Fuente sans-serif para todo el cuerpo */
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    /* Altura de línea */
+    line-height: 1.6;
+    /* Un fondo blanco para ver las sombras */
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    font-weight: bold;
+}
+
+.enlace a {
+    /* Define la decoración del texto */
+    text-decoration-line: underline;
+    /* Define el color de la línea de subrayado */
+    text-decoration-color: #007bff;
+    /* Define el estilo de la línea de subrayado */
+    text-decoration-style: wavy;
+    /* Define el grosor de la línea de subrayado */
+    text-decoration-thickness: 3px;
+    /* Define el color del texto */
+    color: #333;
+}
+
+.transformado {
+    /* Define la transformación del texto */
+    text-transform: capitalize;
+}
+
+.transformado:hover {
+    /* Al pasar el mouse, todo en mayúsculas */
+    text-transform: uppercase;
+}
+
+.titulo-sombra {
+    /* Define la transformación del texto en mayúsculas */
+    text-transform: uppercase;
+}
+
+.titulo-sombra {
+    /* Define el color del texto */
+    color: #fff;
+    /* Define la sombra del texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.enlace-efecto a {
+    /* Define el color del texto */
+    color: #d9534f;
+    /* Define la decoración del texto */
+    text-decoration: none;
+    /* Añadimos una transición suave para el efecto hover */
+    transition: all 0.1s ease;
+}
+
+.enlace-efecto a:hover {
+    /* Define la sombra del texto al pasar el mouse */
+    text-shadow: 0px 1px 1px #fff, 0px -1px 1px #000;
+}

@@ -1,0 +1,49 @@
+body {
+    /* Fuente sans-serif para todo el cuerpo */
+    font-family: sans-serif;
+    /* Altura de línea */
+    line-height: 1.6;
+    /* Color del texto */
+    color: #333;
+    /* Márgenes para centrar el contenido */
+    width: 80%;
+    /* Ancho máximo para pantallas grandes */
+    max-width: 600px;
+    /* Centramos el contenido horizontalmente */
+    margin: 20px auto;
+}
+
+h1,
+p {
+    /* Espacio exterior inferior entre elementos */
+    margin-bottom: 20px;
+}
+
+.titulo {
+    /* Alineación centrada para títulos */
+    text-align: center;
+}
+
+.parrafo-justificado {
+    /* Alineación justificada para párrafos */
+    text-align: justify;
+}
+
+.titulo {
+    /* Define el espaciado entre letras y palabras */
+    letter-spacing: 3px;
+    /* Define el espaciado entre palabras */
+    word-spacing: 5px;
+}
+
+.parrafo-sangria {
+    /* Define la sangría al inicio del párrafo */
+    text-indent: 2.5em;
+}
+
+.icono {
+    /* Por defecto, la imagen se alinea en la base (baseline), 
+     lo que a menudo la deja un poco más abajo de lo deseado.
+     "middle" suele ser la mejor opción para centrarla con el texto. */
+    vertical-align: middle;
+}
